@@ -3,8 +3,9 @@
 // @namespace   Violentmonkey Scripts
 // @match       https://www.myanonamouse.net/*
 // @grant       GM_xmlhttpRequest
-// @version     1.0
-// @author      -
+// @version     1.0.1
+// @author      jack
+// @downloadURL https://github.com/dustcoal/mam-shoutbox-image-paste/raw/refs/heads/main/mam-image-paste.user.js
 // @description 4/1/2025, 12:03:22 PM
 // ==/UserScript==
 
