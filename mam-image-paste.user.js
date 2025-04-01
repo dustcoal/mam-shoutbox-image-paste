@@ -221,7 +221,7 @@
 
           // Insert the markdown into the input field
           const imageUrl = data.data.url;
-          document.getElementById("shbox_text").value += `[imgurl]${imageUrl}[/imgurl]`;
+          document.getElementById("shbox_text").value += `[imgurl]${imageUrl}[/imgurl] `;
         } else {
           console.error("Image upload failed:", data);
           updateStatus(`Image upload failed: ${data.error.message}`, true);
