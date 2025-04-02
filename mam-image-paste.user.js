@@ -4,7 +4,7 @@
 // @match       https://www.myanonamouse.net/*
 // @grant       GM_xmlhttpRequest
 // @run-at      document-idle
-// @version     1.0.11
+// @version     1.0.2
 // @author      jack
 // @downloadURL https://github.com/dustcoal/mam-shoutbox-image-paste/raw/refs/heads/main/mam-image-paste.user.js
 // @description 4/1/2025, 12:03:22 PM
