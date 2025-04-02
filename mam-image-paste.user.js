@@ -3,10 +3,10 @@
 // @namespace   Violentmonkey Scripts
 // @match       https://www.myanonamouse.net/*
 // @grant       GM_xmlhttpRequest
-// @version     1.0.3
+// @version     1.0.4
 // @author      jack
 // @downloadURL https://github.com/dustcoal/mam-shoutbox-image-paste/raw/refs/heads/main/mam-image-paste.user.js
-// @description 4/1/2025, 12:03:22 PM
+// @description Paste images directly into the shoutbox.
 // ==/UserScript==
 
 (function() {
@@ -144,7 +144,7 @@
 
 
     if (input) {
-      addSettingsButton();
+      setInterval(addSettingsButton, 5000);
       input.addEventListener("paste", function (event) {
         // Access the clipboard data
         let clipboardData = event.clipboardData || window.clipboardData;
@@ -429,6 +429,9 @@
   }
 
   function addSettingsButton() {
+    if (document.getElementById("pasteSettings_button")) {
+      return ;
+    }
     let settingsButton = document.createElement('button');
     settingsButton.id = 'pasteSettings_button';
     settingsButton.textContent = '📋';
